@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+/* Universal Selector & Body Styling */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+
+/* Button Styling */
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 40px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px lightgray;
+}
+
+.white-btn {
+    color: hsl(192, 100%, 9%);
+    background-color: white;
+}
+
+.pink-btn {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+
+
+/* Section Styling */
+
+#desktop {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+.bg-images {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100vw;
+}
+
+.bg-images img {
+    width: 100%;
+}
+
+
+/* Hero Section Styling */
+
+.hero-section {
+    background-color: hsl(193, 100%, 96%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    height: 750px;
+}
+
+
+/* Navbar Styling */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 0;
+    z-index: 2;
+}
+
+.huddle-logo-nav img {
+    width: 175px;
+}
+
+
+/* Horizontal Section Styling */
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    margin: 20px 0;
+}
+
+.left {
+    width: 35%;
+    margin: 0 60px;
+}
+
+.left h1 {
+    font-size: 35px;
+    margin: 0 0;
+}
+
+.left p {
+    color: hsl(192, 100%, 9%);
+    font-size: 15px;
+    margin: 20px 0 55px 0;
+}
+
+.right {
+    width: 65%;
+}
+
+.mockup-image {
+    /* width: 750px; */
+    margin: 0 auto;
+}
+
+.mockup-image img {
+    display: block;
+    margin: 0 auto;
+    width: 615px;
+}
+
+
+/* Features Section Styling */
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto 0px auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 7.5px;
+    box-shadow: 0 0 10px rgb(231, 229, 229);
+}
+
+.card-image-area img {
+    width: 400px;
+    padding: 50px;
+}
+
+.card h3 {
+    font-size: 25px;
+}
+
+.card h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(187, 3%, 52%);
+}
+
+.card-text-area {
+    width: 450px;
+}
+
+
+/* Floating Card Section Styling */
+
+.floating-card {
+    background-color: white;
+    width: 850px;
+    height: 250px;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    box-shadow: 0 -1px 7.5px rgb(231, 229, 229);
+}
+
+.floating-card a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 450px;
+}
+
+.huddle-logo-footer {
+    margin: 20px 0;
+}
+
+.huddle-logo-footer img {
+    width: 175px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.top h6 {
+    font-weight: 400;
+    margin: 15px 20px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 40px;
+    font-size: 16px;
+}
+
+
+/* .socials {} */
+
+.soc {
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 50%;
+    padding: 7.5px;
+}
+
+.copyright {
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 5%;
+}
+
+
+/* Media Queries for Responsive Web design */
+
+
+/* For Small Laptops & Tablets  */
+
+@media (min-width:430px) and (max-width:1170px) {
+    #desktop {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+    .white-btn {
+        width: 150px;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    .navbar {
+        padding: 0;
+        margin: 30px 20px 15px 20px;
+    }
+    .huddle-logo-nav {
+        width: 200px;
+    }
+    .huddle-logo-nav img {
+        width: 90%;
+    }
+    .hero-section {
+        margin: 0;
+        padding: 15px 0;
+        height: auto;
+    }
+    .horizontal {
+        flex-direction: column;
+        margin: 0;
+    }
+    .left {
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .left h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+    .left p {
+        margin: 30px 0 40px 0;
+        font-size: 20px;
+    }
+    .right {
+        width: 90%;
+        margin: 0;
+    }
+    .features-section {
+        margin: 50px auto 0 auto;
+    }
+    .card {
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 50px 15px;
+        text-align: center;
+    }
+    .card:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .card-image-area img {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .card-text-area,
+    h3,
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+    .card-text-area {
+        width: 60%;
+    }
+    .card h3 {
+        font-size: 30px;
+        margin: 25px auto;
+    }
+    .card h4 {
+        font-size: 17px;
+    }
+    .floating-card {
+        width: 70%;
+        height: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .floating-card h2 {
+        font-size: 20px;
+    }
+    footer {
+        height: 750px;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    footer ul li {
+        margin: 10px 0;
+    }
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright {
+        justify-content: center;
+    }
+}
+
+
+/* For Mobile Devices */
+
+@media (max-width:430px) {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .white-btn {
+        width: 100px;
+        text-align: center;
+        padding: 5px 12.5px;
+    }
+    .navbar {
+        padding: 0;
+        margin: 30px 10px 15px 20px;
+    }
+    .huddle-logo-nav {
+        width: 150px;
+    }
+    .huddle-logo-nav img {
+        width: 90%;
+    }
+    .hero-section {
+        margin: 0;
+        padding: 15px 0;
+        height: auto;
+    }
+    .horizontal {
+        flex-direction: column;
+        margin: 0;
+    }
+    .left {
+        width: 90%;
+        margin: 35px auto;
+        text-align: center;
+    }
+    .left h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+    .left p {
+        margin: 30px 0 40px 0;
+    }
+    .right {
+        width: 90%;
+        margin: 0;
+    }
+    .right img {
+        width: 300px;
+    }
+    .features-section {
+        margin: 50px auto 0 auto;
+    }
+    .card {
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 50px 15px;
+        text-align: center;
+    }
+    .card:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .card-image-area img {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .card-text-area,
+    h3,
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+    .card-text-area {
+        width: 90%;
+    }
+    .card h3 {
+        font-size: 23px;
+        margin: 20px auto;
+    }
+    .card h4 {
+        font-size: 14.5px;
+    }
+    /* Floating Card */
+    .floating-card {
+        width: 90%;
+        height: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .floating-card h2 {
+        font-size: 20px;
+    }
+    footer {
+        height: 750px;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    footer ul li {
+        margin: 10px 0;
+    }
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright {
+        justify-content: center;
+    }
+}
